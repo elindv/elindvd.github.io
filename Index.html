@@ -1,1 +1,86 @@
+/* ALGEMENE OPMAAK (Selector: body) */
+body {
+    font-family: Arial, sans-serif; /* Strak en makkelijk leesbaar lettertype */
+    background-color: #f0f4f8;      /* Lichte achtergrondkleur (hexadecimaal) */
+    color: #1e293b;                 /* Tekstkleur: donkergrijs/blauw */
+    margin: 0;                      /* Geen witte randen om de pagina */
+    padding: 0;
+}
 
+/* MENU BOVENIN (Selector: nav) */
+nav {
+    background-color: #0f172a;      /* Donkerblauwe menubalk */
+    height: 55px;                   /* Hoogte van het menu */
+    width: 100%;                    /* Breedte over het hele scherm */
+    display: flex;                  /* Zet knoppen netjes naast elkaar */
+    align-items: center;            /* Centreert knoppen verticaal */
+    padding-left: 20px;
+}
+
+/* KNOPPEN IN HET MENU (Selectors: nav a en .dropbtn) */
+nav a, .dropbtn {
+    color: white;                   /* Tekstkleur van de knoppen */
+    text-decoration: none;          /* Haalt het streepje onder links weg */
+    padding: 16px 20px;             /* Ruimte binnenin de knop */
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;                /* Verandert muis in een handje */
+}
+
+/* HOVER-EFFECT: Kleur verandert als je eroverheen gaat */
+nav a:hover, .dropdown:hover .dropbtn {
+    background-color: #38bdf8;      /* Lichtblauwe kleur bij hover */
+    color: #0f172a;                 /* Donkere tekst voor goed contrast */
+}
+
+/* DROPDOWN MENU CONTAINER */
+.dropdown {
+    position: relative;             /* Nodig om het submenu hieronder te plaatsen */
+    display: inline-block;
+}
+
+/* HET UITKLAPMENU (Standaard verborgen) */
+.dropdown-content {
+    display: none;                  /* Verbergt het menu tot je eroverheen gaat */
+    position: absolute;
+    background-color: #1e293b;
+    min-width: 220px;               /* Minimale breedte van het uitklapmenu */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* LINKS IN HET DROPDOWN MENU */
+.dropdown-content a {
+    display: block;                 /* Zet links onder elkaar */
+    padding: 12px 16px;
+}
+
+/* LAAT DROPDOWN ZIEN BIJ HOVER */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* INHOUDSBLOKKEN OP DE PAGINA'S (Class selector: .container & .blok) */
+.container {
+    width: 80%;                     /* Breedte van de hoofdinhoud */
+    max-width: 850px;               /* Wordt nooit breder dan 850 pixels */
+    margin: 30px auto;              /* Centreert het blok in het midden */
+}
+
+.blok {
+    background-color: white;        /* Wit kaartje voor de tekst */
+    padding: 25px;                  /* Binnenmarge */
+    margin-bottom: 20px;            /* Ruimte tussen de blokken */
+    border-radius: 10px;            /* Ronde hoeken */
+    border-left: 6px solid #0284c7; /* Blauw accentlijntje aan de linkerkant */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* AFBEELDINGEN NETJES MAKEN */
+img {
+    max-width: 100%;                /* Zorgt dat plaatjes nooit buiten het blok steken */
+    height: auto;                   /* Behoudt de juiste verhouding */
+    border-radius: 8px;
+    margin-top: 10px;
+}

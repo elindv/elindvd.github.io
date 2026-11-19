@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kleurmodellen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Theorie Informatica ▼</button>
+            <div class="dropdown-content">
+                <a href="invoer.html">Invoer - Verwerking - Uitvoer</a>
+                <a href="binair.html">Binair stelsel</a>
+                <a href="kleur.html">Kleurmodellen</a>
+                <a href="compressie.html">Compressie: Bitmap/Vector</a>
+            </div>
+        </div>
+        <a href="ai.html">AI</a>
+    </nav>
+
+    <div class="container">
+        <div class="blok">
+            <h1>Kleurmodellen: RGB en CMYK</h1>
+            <!-- Samenvatting van jouw bijlagen over RGB en CMYK -->
+            <p><b>RGB-model (Beeldschermen):</b> Een scherm bestaat uit miljoenen pixels met drie kleine lampjes: <b>R</b>ood, <b>G</b>roen en <b>B</b>lauw[cite: 5, 6]. Door deze lampjes te mengen op een zwarte achtergrond ontstaan alle kleuren[cite: 4, 6].</p>
+            <p><b>CMYK-model (Printers):</b> Papier is wit, dus een printer mengt inkt in de kleuren <b>C</b>yaan, <b>M</b>agenta, <b>Y</b>ellow (geel) en <b>K</b>ey (zwart) om scherpe afdrukken te maken[cite: 2, 3].</p>
+        </div>
+
+        <!-- Verplicht volgens rubriek: RGB in decimaal én hexadecimaal + uitleg hoe je kleur gebruikt in je code -->
+        <div class="blok">
+            <h2>RGB in Decimaal en Hexadecimaal</h2>
+            <p>Elke RGB-kleur krijgt een waarde van <b>0 tot 255</b> (decimaal)[cite: 4]. In HTML en CSS schrijven we dit vaak korter op met <b>hexadecimale codes</b> (met cijfers 0-9 en letters A-F):</p>
+            <ul>
+                <li><b>Rood:</b> Decimaal <code>rgb(255, 0, 0)</code> | Hexadecimaal <code>#FF0000</code>[cite: 2]</li>
+                <li><b>Geel:</b> Decimaal <code>rgb(255, 255, 0)</code> | Hexadecimaal <code>#FFFF00</code>[cite: 4]</li>
+                <li><b>Wit:</b> Decimaal <code>rgb(255, 255, 255)</code> | Hexadecimaal <code>#FFFFFF</code></li>
+            </ul>
+            <p><i>Op mijn eigen website heb ik bijvoorbeeld <code>background-color: #0f172a;</code> gebruikt in mijn CSS-bestand om het menu donkerblauw te maken.</i></p>
+        </div>
+
+        <div class="blok">
+            <h2>Video: RGB vs CMYK</h2>
+            <p><b>Waarom deze video?</b> Deze korte video laat het verschil zien tussen licht mengen op een scherm (RGB) en inkt mengen op papier (CMYK)[cite: 3, 6].</p>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/9hirYMZ7PQc" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
